@@ -1,0 +1,5 @@
+addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.19")
+addSbtPlugin("com.vmunier" % "sbt-web-scalajs" % "1.0.6")
+addSbtPlugin("ch.epfl.scala" % "sbt-web-scalajs-bundler" % "0.9.0")
+addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.3.0")
+addSbtPlugin("se.marcuslonnberg" % "sbt-docker" % "1.5.0")
