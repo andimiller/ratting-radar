@@ -37,7 +37,7 @@ object Rattingradar extends JSApp {
 
     
 
-    val systems = Observable.from(HttpRequest("./systems.json").send()).map { x => parse(x.body).toOption.map{_.as[(String,String,String,String,String,String,String)].toOption.map(Map.System.fromTuple).get}}
+    val systems = Observable.from(HttpRequest("systems.json").send()).map { x => parse(x.body).toOption.map{_.as[(String,String,String,String,String,String,String)].toOption.map(Map.System.fromTuple).get}}
     systems.subscribe(s => println(s))
 
     val request = HttpRequest("https://esi.tech.ccp.is/v2/universe/system_kills/")
